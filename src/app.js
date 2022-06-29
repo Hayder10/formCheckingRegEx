@@ -9,3 +9,9 @@ window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
 };
+
+let form = document.querySelector("form");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+});
