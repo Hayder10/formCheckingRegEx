@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container mt-3">
     <div class="card">
       <div class="card-header">
         <h3>Payment form example</h3>
@@ -22,44 +22,45 @@
         <div class="alert alert-danger" id ="errorMsg" role="alert">
           Some fields are missing
         </div>
+        <!-- FORM START -->
         <form class="row gx-4 gy-3">
           <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Card #</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="XXXXXXXXXXXXXXXXXXX">
+            <label for="cardNumber" class="form-label">Card #</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXXXXX">
           </div>
           <div class="col-md-2">
-            <label for="inputPassword4" class="form-label">CVC #</label>
-            <input type="text" class="form-control" id="inputPassword4" placeholder="0000">
+            <label for="cardCVC" class="form-label">CVC #</label>
+            <input type="text" class="form-control" id="cardCVC" placeholder="0000">
           </div>
           <div class="col-4">
-            <label for="inputAddress" class="form-label">Amount</label>
+            <label for="amount" class="form-label">Amount</label>
             <div class="d-flex justify-content-between">
-              <i class="fa-solid fa-dollar-sign"></i><input type="text" class="form-control" id="inputAddress"
+              <i class="fa-solid fa-dollar-sign"></i><input type="text" class="form-control" id="amount"
                 placeholder="Amount">
             </div>
           </div>
           <div class="col-6">
-            <label for="inputAddress2" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="inputAddress2">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName">
           </div>
           <div class="col-6">
-            <label for="inputAddress2" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="inputAddress2">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName">
           </div>
           <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city">
           </div>
           <div class="col-md-3">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
+            <label for="stateSelect" class="form-label">State</label>
+            <select id="stateSelect" class="form-select">
               <option selected>Pick a state</option>
               <option>New York</option>
             </select>
           </div>
           <div class="col-md-3">
-            <label for="inputZip" class="form-label">Postal Code</label>
-            <input type="text" class="form-control" id="inputZip">
+            <label for="postalCode" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="postalCode">
           </div>
           <div class="col-md-3">
             <p>We accept:</p>
@@ -88,7 +89,7 @@
           <div class="col-md-6 offset-3">
             <p>Message</p>
             <div class="form-floating">
-              <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+              <textarea class="form-control" id="message" style="height: 100px"></textarea>
             </div>
             <p class="text-muted fw-light fs-6">Add any notes here.</p>
           </div>
